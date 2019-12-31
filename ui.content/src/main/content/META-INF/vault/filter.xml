@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/silverseatest" mode="merge"/>
+    <filter root="/content/silverseatest" mode="merge"/>
+    <filter root="/content/dam/silverseatest" mode="merge"/>
+</workspaceFilter>

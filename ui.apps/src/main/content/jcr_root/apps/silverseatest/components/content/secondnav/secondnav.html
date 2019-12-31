@@ -1,0 +1,25 @@
+<sly data-sly-use.multiLinks="com.silverseatest.core.models.SecondnavModel">
+
+
+
+
+
+
+</sly>
+
+
+
+
+ <div class="nav-class">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="collapse navbar-collapse justify-content-md-center" id="navbarNav">
+        <ul class="navbar-nav ">
+            <sly data-sly-list.eachSlide="${multiLinks.navbar.listChildren}">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">${eachSlide.links} <span class="sr-only">(current)</span></a>
+              </li>
+            </sly>
+        </ul>
+      </div>
+    </nav>
+</div> 

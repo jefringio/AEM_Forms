@@ -1,0 +1,31 @@
+hai
+<sly data-sly-use.footer="com.silverseatest.core.models.FooterModel">
+
+
+            <sly data-sly-list.social="${footer.socialbar.listChildren}">
+            ${social.icons}
+
+
+
+    </sly> 
+
+		${footer.email}
+        ${footer.images}
+        ${footer.title}
+        ${footer.subheading}
+        ${footer.buttonname}
+        ${footer.call}
+        ${footer.contact}
+        ${footer.next}
+        ${footer.button}
+
+
+  <sly data-sly-list.secondfooter="${footer.footerlinks.listChildren}">
+            ${secondfooter.mainlink}
+
+		 <sly data-sly-list.secondlink="${secondfooter.sublinks.listChildren}">
+            ${secondlink.links}</sly>
+
+</sly>
+
+    </sly>

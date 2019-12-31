@@ -1,0 +1,35 @@
+<sly data-sly-use.navbars="com.silverseatest.core.models.NavbarModel">
+<header class="header">
+  <nav class="navbar">
+    <img src = "${navbars.fileReference}" style ="width:140px;">
+
+    <label for="nav" class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+     </label>
+    <div class="wrapper">
+      <ul class="menu">
+        <li class="menu-item">
+      <a class="link" href="${navbars.path1}">${navbars.link1}</a>
+    </li>
+    <li class="menu-item">
+      <a class="link" href="${navbars.path2}">${navbars.link2}</a>
+    </li>
+    <li class="menu-item">
+      <a class="link" href="${navbars.path3}">${navbars.link3}</a>
+    </li>
+    <li class="menu-item">
+      <a class="link" href="${navbars.path4}">${navbars.link4}</a>
+    </li>
+    <li class="menu-item">
+      <a class="link" href="#">${navbars.link5}</a>
+    </li>
+     <li class="menu-item">
+      <a class="link" href="#">${navbars.link6}</a>
+    </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+</sly>

@@ -1,0 +1,79 @@
+<sly data-sly-use.multiLinks="com.silverseatest.core.models.Dropdown">
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+  	<form class="form-inline my-2 my-lg-0">
+
+
+    <ul class="navbar-nav mr-auto">
+
+
+
+
+       <li id ="destin-list" class="nav-item dropdown">
+
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          DESTINATION
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <sly data-sly-list.des="${multiLinks.destination.listChildren}">
+
+          <a class="dropdown-item" href="#">${des.destin}</a>
+		 </sly>
+        </div>
+
+      </li>
+
+
+
+       <li id ="date-list" class="nav-item dropdown">
+
+
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          DEPARTURE DATE
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <sly data-sly-list.dat="${multiLinks.dates.listChildren}">
+          <a class="dropdown-item" href="#">${dat.depdate}</a>
+			</sly>
+        </div>
+
+      </li>
+
+
+
+      <li id ="ship-list" class="nav-item dropdown">
+
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          SHIP
+        </a>
+
+
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+        <sly data-sly-list.shi="${multiLinks.ships.listChildren}">
+          <a class="dropdown-item" href="#">${shi.ship}</a>
+		</sly>
+        </div>
+
+      </li>
+
+
+    </ul>
+
+
+       <button class="value" id= "fooo"  >Click me</button>
+    </form>
+
+  </div>
+</nav>
+</sly>
+
+
+

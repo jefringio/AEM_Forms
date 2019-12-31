@@ -1,0 +1,23 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.all @ categories='insidertips'}"/>
+
+<sly data-sly-use.inside="com.silverseatest.core.models.InsiderTips">
+
+
+<div class="insidertip">
+<figure class="insidertip__bulb"><img class="insidertip__image" src="${inside.fileReference}" alt="" ></figure>
+    <div class="insidertip__title"> ${inside.title}</div>
+    <div class="insidertip__container container-fluid">
+
+        <div class="row" style="margin: 0 -12px;">
+			<sly data-sly-list.each="${inside.numbercolumn.listChildren}">
+            <div class="col-lg-4">
+                <div class="insidertip__number">${each.number}</div>
+                <div class="insidertip__description">${each.description}</div>
+        	</div>
+			</sly>
+    	</div>
+
+	</div>
+</div>
+</sly>

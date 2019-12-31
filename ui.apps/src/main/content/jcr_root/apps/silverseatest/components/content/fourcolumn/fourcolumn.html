@@ -1,0 +1,26 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.all @ categories='four'}"/>
+
+
+<sly data-sly-use.four="com.silverseatest.core.models.FourColumn">
+<div class="fourcolumn">
+	<div class="fourcolumn__heading">
+		<h1 class="fourcolumn__main">RELATED DESTINATIONS </h1>
+
+	</div>
+
+    <div class="fourcolumn__row row" style="margin:0 0px;">
+    
+        <sly data-sly-list.each="${four.fourcolumns.listChildren}">
+        <div class="fourcolumn__columns col-lg-3">
+            <div class="fourcolumn__figure"><img class="fourcolumn__image" src="${each.fileReference}" alt="colorful-coral-reefs-and-marine-life" /></div>
+            <div class="fourcolumn__text">
+                <div class="fourcolumn__title">${each.title}</div>
+            </div>
+        </div>
+        </sly>
+
+    </div>
+</div>
+</sly>
+

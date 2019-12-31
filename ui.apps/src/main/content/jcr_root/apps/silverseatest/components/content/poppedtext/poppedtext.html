@@ -1,0 +1,18 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.all @ categories='popped'}"/>
+<sly data-sly-use.pop="com.silverseatest.core.models.PoppedText">
+
+<div class="poppedtext1">
+    <figure class="poppedtext1__figure">
+		<img class="poppedtext1__background" src="${pop.fileReference}" alt="image" >
+	</figure>
+	<div class="poppedtext1__whiteBottomCover">
+		<div class="poppedtext1__whitetext">
+			<h2 class="poppedtext1__title">${pop.title}</h2>
+    		<p class="poppedtext1__description">${pop.description}</p>
+
+		</div>
+	</div>
+
+</div>
+</sly>

@@ -1,0 +1,19 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.all @ categories='threecolumn'}"/>
+
+<sly data-sly-use.three="com.silverseatest.core.models.ThreeColumn">
+<haai>
+<div class="threeColimage row" style="margin:0 0px; ;">
+	<sly data-sly-list.each="${three.slides.listChildren}">
+    <div class="threeColimage__columns col-lg-4">
+        <div class="threeColimage__figure"><img class="threeColimage__image" src="${each.fileReference}" alt="colorful-coral-reefs-and-marine-life" /></div>
+        <div class="threeColimage__text">
+            <h4 class="threeColimage__title">${each.title}</h4>
+            <p class="threeColimage__description">${each.description}</p>
+        </div>
+    </div>
+    </sly>
+
+</div>
+</sly>
+

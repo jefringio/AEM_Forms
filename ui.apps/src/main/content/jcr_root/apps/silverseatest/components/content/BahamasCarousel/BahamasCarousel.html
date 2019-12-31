@@ -1,0 +1,138 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.all @ categories='bahamascarousel'}"/>
+
+<sly data-sly-use.car="com.silverseatest.core.models.BahamasCarousel">
+
+<div class="slider" id="myCarousel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+       <div class="indicators">
+          <ol class="carousel-indicators slider__indicators"  >
+<li class="slider__indicatorsli ctive" data-wrap ="false" data-target="#carouselExampleIndicators" data-slide-to="0" ><a class="slider__indicatorsa" href="#">${car.text1}</a></li>
+<li class="slider__indicatorsli" data-target="#carouselExampleIndicators" data-slide-to="1"><a class="slider__indicatorsa" href="#">${car.text2}</a></li>
+            <li class="slider__indicatorsli" data-target="#carouselExampleIndicators" data-slide-to="2"><a class="slider__indicatorsa" href="#">${car.text3}</a></li>
+			<li class="slider__indicatorsli" data-target="#carouselExampleIndicators" data-slide-to="3"><a class="slider__indicatorsa" href="#">${car.text4}</a></li>
+  <li class="slider__indicatorsli" data-target="#carouselExampleIndicators" data-slide-to="4"><a class="slider__indicatorsa" href="#">${car.text5}</a></li>
+		</ol>
+      </div>
+      <div class="carousel-inner slider__inner">
+        <div class="carousel-item  slider__item ">
+          <div class="slider__row row" style="margin:0;">
+			<sly data-sly-list.each1="${car.image1.listChildren}">
+                <div class="slider__columns col-lg-3">
+					<div class="slider__figure"><img class="slider__image" src="${each1.fileReference}" alt="colorful-coral-reefs-and-marine-life" /></div>
+                    <div class="slider__text">
+                        <div class="slider__title">${each1.title}</div>
+                        <div class="slider__departure">${each1.departure} </div>
+                        <div class="slider__onboard">${each1.onboard}</div>
+                        <div class="slider__usd">From USD*</div>
+                        <div class="slider__money">
+                            <span class="slider__dollar">$</span> 
+                            ${each1.money}</div>
+							<hr>
+						 <a href="#">VIEW 1 DATE</a>
+                   		</div>
+                	</div>
+				</sly>
+			</div>
+        </div>
+        <div class="carousel-item">
+          <div class="slider__row row" style="margin:0;">
+                <sly data-sly-list.each2="${car.image2.listChildren}">
+                <div class="slider__columns col-lg-3">
+					<div class="slider__figure"><img class="slider__image" src="${each2.fileReference}" alt="colorful-coral-reefs-and-marine-life" /></div>
+                    <div class="slider__text">
+                        <div class="slider__title">${each2.title}</div>
+                        <div class="slider__departure">${each2.departure} </div>
+                        <div class="slider__onboard">${each2.onboard}</div>
+                        <div class="slider__usd">From USD*</div>
+                        <div class="slider__money">
+                            <span class="slider__dollar">$</span> 
+                            ${each2.money}</div>
+							<hr>
+						 <a href="#">VIEW 1 DATE</a>
+                   		</div>
+
+
+                	</div>
+				</sly>
+
+            </div>
+        </div>
+        <div class="carousel-item">
+          <div class="slider__row row" style="margin:0;">
+                <sly data-sly-list.each3="${car.image3.listChildren}">
+                <div class="slider__columns col-lg-3">
+					<div class="slider__figure"><img class="slider__image" src="${each3.fileReference}" alt="colorful-coral-reefs-and-marine-life" /></div>
+                    <div class="slider__text">
+                        <div class="slider__title">${each3.title}</div>
+                        <div class="slider__departure">${each3.departure} </div>
+                        <div class="slider__onboard">${each3.onboard}</div>
+                        <div class="slider__usd">From USD*</div>
+                        <div class="slider__money">
+                            <span class="slider__dollar">$</span> 
+                            ${each3.money}</div>
+                   		</div>
+						<hr>
+						 <a href="#">VIEW 1 DATE</a>
+                	</div>
+				</sly>
+
+            </div>
+        </div>
+         <div class="carousel-item">
+                  <div class="slider__row row" style="margin:0;">
+                     <sly data-sly-list.each4="${car.image4.listChildren}">
+                        <div class="slider__columns col-lg-3">
+                            <div class="slider__figure"><img class="slide__image" src="${each4.fileReference}" alt="colorful-coral-reefs-and-marine-life" /></div>
+                            <div class="slider__text">
+                                <div class="slider__title">${each4.title}</div>
+                                <div class="slider__departure">${each4.description} </div>
+                                <div class="slider__onboard">${each4.onboard}</div>
+                                <div class="slider__usd">From USD*</div>
+                                <div class="slider__money">
+                                    <span class="slider__dollar">$</span> 
+                                    ${each4.money}</div>
+
+								<hr>
+						 		<a href="#">VIEW 1 DATE</a>
+                            </div>
+							 </div>
+                        </sly>
+
+                    </div>
+                </div>
+ <div class="carousel-item">
+          <div class="slider__row row" style="margin:0;">
+               <sly data-sly-list.each5="${car.image5.listChildren}">
+                <div class="slider__columns col-lg-3">
+					<div class="slider__figure"><img class="slider__image" src="${each5.fileReference}" alt="colorful-coral-reefs-and-marine-life" /></div>
+                    <div class="slider__text">
+                        <div class="slider__title">${each5.title}</div>
+                        <div class="slider__departure">${each5.description} </div>
+                        <div class="slider__onboard">${each5.onboard}</div>
+                        <div class="slider__usd">From USD*</div>
+                        <div class="slider__money">
+                            <span class="slider__dollar">$</span> 
+                            ${each5.money}</div>
+							<hr>
+						 <a href="#">VIEW 1 DATE</a>
+                	</div>
+                   		</div>
+
+				</sly>
+                </div>
+
+            </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev slider__prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next slider__next " href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+</div>
+</div>
+</sly>

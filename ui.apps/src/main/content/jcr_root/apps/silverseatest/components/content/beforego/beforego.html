@@ -1,0 +1,34 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.all @ categories='beforeyougo'}"/>
+
+<sly data-sly-use.before="com.silverseatest.core.models.BeforeYouGo">
+
+<div class="beforeYouGo">
+    <div class="row">
+        <div class="beforeYouGo__colOne col-lg-7">
+            <div class="beforeYouGo__infoTitle">
+                <div class="beforeYouGo__subHeading">${before.preheading}</div>
+                <div class="beforeYouGo__heading">${before.title}</div>
+            </div>
+            <div class="beforeYouGo__description">
+                <div class="beforeYouGo__introdescription">${before.subheading}</div><br/>
+                <div class="beforeYouGo__paragraphdescription">${before.description}</div>
+        	</div>
+        </div>
+        <div class="beforeYouGo__colTwo col-lg-5">
+			  <sly data-sly-list.each="${before.multiplecolumn.listChildren}">
+            <div class="beforeYouGo__row2 row">
+                <div class="beforeYouGo__row2col1 col-lg-2">
+                    <div class="beforeYouGo__figures"><img class="beforeYouGo__image" src="${each.fileReference}" /></div>
+                </div>
+                <div class="col-lg-8">
+                    <h6>${each.titles}</h6>
+                    <p class="beforeYouGo__columndescription">${each.descriptions}</p>
+                    <a href="#">READ MORE</a>
+                </div>
+            </div>
+            </sly>
+        </div>
+    </div>
+</div>
+</sly>

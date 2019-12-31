@@ -1,0 +1,15 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.all @ categories='local'}"/>
+
+<sly data-sly-use.local="com.silverseatest.core.models.LocalCuisine">
+
+<div class="local">
+	<div class="local__text">
+
+		<div class="local__preheading">${local.preheading}</div>
+		<div class="local__title">${local.title}</div>
+		<div class="local__description">${local.description}</div>
+	</div>
+
+</div>
+</sly>
